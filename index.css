@@ -1,0 +1,542 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap');
+
+/* default styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Barlow', sans-serif;
+}
+
+h1, h3, h4 {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+p {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+}
+
+/* header styles */
+header {
+    background: url(images/mobile/image-header.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 490px;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background: rgb(16, 193, 216);
+}
+
+nav > img:nth-child(2),  img:nth-child(3) {
+    height: 0.9rem;
+}
+
+nav > section {
+    display: none;
+}
+
+header > section {
+    position: fixed;
+    top: 4rem;
+    z-index: 999;
+    background: white;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    gap: 1.5rem;
+    width: 90%;
+    border-radius: 5px;
+    display: none;
+}
+
+header section a {
+    color: hsl(210, 4%, 67%);
+}
+
+header section button {
+    background: hsl(51, 100%, 49%);
+    border: none;
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+}
+
+header h1 {
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: 45px;
+    padding-top: 4rem;
+}
+
+header > h1:last-of-type {
+    display: none;
+}
+
+header svg {
+    align-self: center;
+    margin-top: 1.4rem;
+}
+/* main styles */
+
+main > section {
+    display: flex;
+    flex-direction: column;
+}
+
+main section img {
+    width: 100%;
+    height: 250px;
+}
+
+.desktopImage {
+    display: none;
+}
+
+.desktopImage2 {
+    display: none;
+}
+
+main section > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    line-height: 1.5;
+    padding: 2.5rem 1rem;
+}
+
+main section > div h1, h4 {
+    color: hsl(212, 27%, 19%);
+    font-weight: 900;
+}
+
+main section > div p {
+    padding: 1rem 0;
+    color: hsl(232, 10%, 55%);
+}
+
+main section > div h4 {
+    z-index: 9;
+    text-transform: uppercase;
+}
+
+main section > div > div {
+    background: hsla(7, 99%, 70%, 0.295);
+    width: 40%;
+    height: 6px;
+    border-radius: 5px;
+    position: relative;
+    bottom: 0.5rem;
+}
+
+main > section:nth-child(3) > section:first-of-type {
+    background: url(images/mobile/image-graphic-design.jpg);
+    background-repeat: no-repeat;
+    height: 490px;
+    width: 100%;
+    background-size: 100%;
+}
+
+main > section:nth-child(3) > section:first-of-type div  {
+    position: relative;
+    top: 17rem;
+}
+
+main > section:nth-child(3) > section:first-of-type div h1 {
+    color: hsl(167, 40%, 24%);
+}
+
+main > section:nth-child(3) > section:first-of-type div p {
+    color: hsl(167, 40%, 24%);
+}
+
+main > section:nth-child(3) > section:last-of-type {
+    background: url(images/mobile/image-photography.jpg);
+    background-repeat: no-repeat;
+    height: 490px;
+    width: 100%;
+    background-size: 100%;
+}
+
+main > section:nth-child(3) > section:last-of-type div  {
+    position: relative;
+    top: 17rem;
+}
+
+main > section:nth-child(3) > section:last-of-type div h1 {
+    color: hsl(198, 62%, 26%);
+}
+
+main > section:nth-child(3) > section:last-of-type div p {
+    color: hsl(198, 62%, 26%);
+}
+
+main > section:nth-child(4) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+main section:nth-child(4) > section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 0;
+}
+
+main section:nth-child(4) > h3 {
+    text-transform: uppercase;
+    text-align: center;
+    color: hsl(210, 4%, 67%);
+}
+
+main section:nth-child(4) section > section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    line-height: 1.5;
+    padding: 2rem 1rem;
+}
+
+main section:nth-child(4) section > section img {
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+}
+
+main section:nth-child(4) section > section p {
+    padding: 1rem;
+    color: hsl(232, 10%, 55%);
+}
+
+main > section:nth-child(5) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+main > section:nth-child(5) > div {
+    width: 50%;
+    padding: 0;
+}
+
+main > section:nth-child(5) div img {
+    width: 100%;
+    height: 100%;
+}
+
+.desktopGridImage {
+    display: none;
+}
+
+
+/* footer styles */
+footer {
+    background: hsla(168, 34%, 41%, 0.582);
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+footer > section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer > section div {
+    display: flex;
+    align-items: center;
+}
+
+footer > section div:first-of-type {
+    gap: 3rem;
+    margin: 1rem 0 ;
+}
+
+footer > section div:first-of-type a {
+    color: hsl(168, 34%, 41%);
+}
+
+footer > section div:first-of-type a:hover {
+    color: white;
+    transition: all 1s ease-in;
+}
+
+.socialIcons:hover {
+    fill: white;
+    transition: all 1s ease-in;
+}
+
+footer > section div:last-of-type {
+    gap: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution p {
+    color: hsl(168, 34%, 41%);
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+/* media query for desktop view */
+@media screen and (min-width: 600px) {
+    header {
+        background: url(images/desktop/image-header.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        height: 900px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    header > h1 {
+        position: relative;
+        top: 13rem;
+        font-size: 60px;
+    }
+
+
+    header svg {
+        align-self: center;
+        margin-top: 1.4rem;
+        position: relative;
+        top: 16rem;
+    }
+
+    nav {
+        background: transparent;
+    }
+
+    nav img:nth-child(2), img:nth-child(3) {
+        display: none;
+    }
+
+    nav > section {
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    nav > section a {
+        color: white;
+    }
+
+    nav > section button {
+        background: white;
+    }
+
+    nav > section button:hover {
+        background: rgba(255, 255, 255, 0.295);
+        color: white;
+        transition: all 1s ease-in;
+    }
+
+    header > h1:first-of-type {
+        display: none;
+    }
+
+    header > h1:last-of-type {
+        display: block;
+        /* position: relative;
+        bottom: 3rem; */
+    }
+    
+    header svg {
+        align-self: center;
+        margin-top: 1.4rem;
+    }
+
+    /* main styles */
+    main section:first-of-type {
+        flex-direction: row-reverse;
+    }
+
+    main > section > img {
+        display: none;
+    }
+
+    .desktopImage {
+        display: block;
+        height: 500px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .desktopImage img {
+        height: 100% !important;
+    }
+    
+    .desktopImage2 {
+        display: block;
+        height: 500px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .desktopImage2 img {
+        height: 100% !important;
+    }
+
+    main section:nth-child(2) {
+        flex-direction: row;
+    }
+
+    main > section > div {
+        justify-content: center;
+    }
+
+    main section:first-of-type > img {
+        width: 50%;
+    }
+
+    main > section:first-of-type > div:last-of-type > p {
+        width: 55%;
+    }
+
+    main > section:first-of-type > div:last-of-type > h1 {
+        width: 55%;
+    }
+
+    main section:first-of-type > div:last-of-type > h4 {
+        width: 55%;
+    }
+
+    main section:first-of-type > div:last-of-type > div {
+        align-self: start;
+        width: 13%;
+        left: 12.1rem;
+    }
+
+    main section:nth-child(2) > div:last-of-type > p {
+        width: 55%;
+    }
+
+    main section:nth-child(2) > div:last-of-type > h1 {
+        width: 55%;
+    }
+
+    main section:nth-child(2) > div:last-of-type > h4 {
+        width: 55%;
+    }
+
+
+    main section:nth-child(2) > div:last-of-type > div {
+        align-self: start;
+        width: 13%;
+        left: 12.1rem;
+    }
+
+
+    main section:nth-child(2) > img {
+        width: 50%;
+    }
+
+    main section:first-of-type > div {
+        width: 50%;
+        text-align: left;
+    }
+
+    main section:nth-child(2) > div {
+        width: 50%;
+        text-align: left;
+    }
+
+    main section:nth-child(3) {
+        flex-direction: row;
+    } 
+
+    main section:nth-child(3) > section {
+        display: flex;
+        justify-content: center ;
+    }
+    
+
+    main section:nth-child(3) > section:first-of-type {
+        background: url(images/desktop/image-graphic-design.jpg);
+        background-repeat: no-repeat;
+        height: 600px;
+        background-size: 100%;
+    }
+
+    main section:nth-child(3) > section:last-of-type {
+        background: url(images/desktop/image-photography.jpg);
+        background-repeat: no-repeat;
+        height: 600px;
+        background-size: 100%;
+    }
+
+    main section:nth-child(3) > section:first-of-type > div {
+        text-align: center;
+        align-items: center;
+        top: 24rem;
+    }
+
+    main section:nth-child(3) > section:last-of-type > div {
+        text-align: center;
+        align-items: center;
+        top: 24rem;
+    }
+
+    main section:nth-child(3) > section:last-of-type > div p {
+        width: 350px;
+    }
+
+    main section:nth-child(4) > section {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 3rem 0;
+    }
+
+    main section:nth-child(4) section > section{
+        width: 25%;
+    }
+
+    .mobileGridImage {
+        display: none;
+    }
+
+    .desktopGridImage {
+        display: block;
+    }
+
+    main > section:nth-child(5) > div {
+        width: 25%;
+        height: 400px;
+        padding: 0;
+    }
+
+}
